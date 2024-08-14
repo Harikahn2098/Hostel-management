@@ -1,0 +1,28 @@
+.custom-select-wrapper {
+    position: relative;
+  }
+  
+  .custom-select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-right: 30px; /* Make room for the arrow */
+  }
+  
+  .custom-arrow {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    pointer-events: none;
+    transform: translateY(-50%);
+    border: solid #000;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 4px;
+    transform: rotate(45deg);
+  }
+  
+  .custom-select:focus + .custom-arrow {
+    border-color: #6022ea; /* Change color on focus */
+  }
+  
